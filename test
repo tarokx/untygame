@@ -1,4 +1,30 @@
-#inculude<stdio.h>
-
-main{
+#include <stdio.h>
+ 
+int main(void)
+{
+  /* 変数の宣言 */
+  int i, a;
+  int b[10];
+ 
+  /* 10進数の入力 */
+  printf("10進数は？");
+  scanf("%d", &a);
+ 
+  /* 10進数→2進数の変換 */
+  for(i=0;a>0;i++)
+　{
+    b[i] = a % 2;
+    a = a / 2;
+  }
+ 
+  /* 2進数の出力 */
+  printf(" 2進数 = ");
+  while( i>0 )
+　{
+    printf("%d", b[i]);
+    i=i-1;
+  }
+  printf("\n");
+ 
+  return 0;
 }
