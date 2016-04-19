@@ -1,4 +1,7 @@
 #inculude<stdio.h>
 
 main{
+
+printf("hi");
+
 }
